@@ -1,0 +1,152 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+
+/* Header Styling */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+
+/* Full-Screen Sections */
+
+.content-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: transform 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.page.active {
+    transform: translateY(-100%);
+}
+
+
+/* Background Colors for Each Section */
+
+#home {
+    background: linear-gradient(to right, #3498db, #9b59b6);
+}
+
+#achievements {
+    background: linear-gradient(to right, #1abc9c, #f39c12);
+}
+
+#projects {
+    background: linear-gradient(to right, #e74c3c, #34495e);
+}
+
+#profile {
+    background: linear-gradient(to right, #2ecc71, #f39c12);
+}
+
+
+/* Content Styling */
+
+.content {
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-details {
+    color: #333;
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

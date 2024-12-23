@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>our Team Portfolio</title>
+    <link rel="stylesheet" href="pro2.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1> Team Developers</h1>
+            <p>Our Team's Mission or Tag line</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            We are a team of passionate individuals working together to deliver outstanding results. Our expertise spans various areas, and we collaborate to create innovative solutions.
+        </p>
+    </section>
+
+    <section id="team">
+        <h2>Meet The Team</h2>
+        <div class="team-member">
+            <div class="profile">
+                <div class="content">
+                    <img src="VISHNU.jpg" alt="Member 1" class="image">
+                </div>
+            </div>
+            <h3>VISHNU R M</h3>
+            <p>Role: Developer</p>
+            <P> </P>
+        </div>
+        <div class="team-member">
+            <div class="profile">
+                <div class="content">
+                    <img src="vinish1.jpg" alt="Member 2" class="image">
+                </div>
+            </div>
+            <h3>VINISHRAGHAV K E</h3>
+            <p>Role: Designer</p>
+        </div>
+        <div class="team-member">
+            <div class="profile">
+                <div class="content">
+                    <img src="reegan.jpg" alt="Member 3" />
+                </div>
+            </div>
+            <h3>REEGAN FERDINAND K</h3>
+            <p>Role: Project Manager</p>
+        </div>
+        <div class="team-member">
+            <div class="profile">
+                <div class="content">
+                    <img src="ZIDANE.png" alt="Member 3" />
+                </div>
+            </div>
+            <h3>ZIDANE ASHIK</h3>
+            <p>Role: Developer</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: teamdevelopers@gmail.com</p>
+        <p>Phone: +91 9850107673</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Team Developers</p>
+    </footer>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>
